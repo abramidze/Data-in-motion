@@ -13,8 +13,16 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 .section:hover .bar {
-  animation: bar-grow 10s ease forwards;
-  width: 100%;
+  animation: bar-grow 5s ease forwards;
+}
+@keyframes bar-grow {
+  0%,
+  100% {
+    width: 2px;
+  }
+  50% {
+    width: 100%;
+  }
 }
 h2 {
   width: 387px;
